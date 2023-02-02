@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTADÃO Bar & Lanche</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="links">
+        <label for="rd_cardapio">Cardápio</label>
+        <label for="rd_pedido">Pedido</label>
+        <label for="rd_faleconosco">Fale Conosco</label>
+        <label for="rd_quemsomos">Quem Somos</label>
+    </nav>
+
+    
+    <div class="scroll">
+        <input  type="radio" name="grupo" id="rd_cardapio" checked="true">
+        <input  type="radio" name="grupo" id="rd_pedido">
+        <input  type="radio" name="grupo" id="rd_faleconosco"> 
+        <input  type="radio" name="grupo" id="rd_quemsomos">
+
+        <section class="sections">
+
+            <!--CARDAPIO-->
+            <section class="bloco" id="cardapio">
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked="true">
+                        <label for="slide1"></label>
+                        <img src="img/LanchesPernilcardapio.png" />
+                    </li>
+
+                    <li>
+                        <input type="radio" id="slide2" name="slide">
+                        <label for="slide2"></label>
+                        <img src="img/Hamburgueriacardapio.png" />
+                    </li>
+
+                    <li>
+                        <input type="radio" id="slide3" name="slide">
+                        <label for="slide3"></label>
+                        <img src="img/SuperPratoscardapio.png" />
+                    </li>
+                </ul>
+            </section>
+
+            <!--PEDIDOS-->
+            <section class="bloco" id="pedido">
+               <div class="pedidodetalhes">
+                <h3 class="pedidotexto">Faça seu pedido direto pelo iFood</h3>    
+                <p><a class="pedidotexto1" href="https://www.ifood.com.br/delivery/sao-paulo-sp/bar-e-lanches-estadao-centro/5770dab7-943e-4046-9b71-1f9d39aec822" target="_blank">Clique aqui!</a></p>   
+                </div>
+            </section>
+
+            <!--FALE CONOSCO-->    
+            <section class="bloco" id="faleconosco">
+                <div class="box">
+                    <form action="">
+                        <fieldset>
+                            <br>
+                            <div class="inputBox">
+                                <input type="text" name="nome" id="nome" class="inputUser" required>
+                                <label for="nome" class="labelInput">Nome</label>
+                            </div>
+
+                            <br>
+
+                            <div class="inputBox">
+                                <input type="text" name="email" id="email" class="inputUser" required>
+                                <label for="nome" class="labelInput">E-mail</label>
+                            </div>
+
+                            <br>
+
+                            <div class="inputBox">
+                                <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                                <label for="telefone" class="labelInput">Telefone</label>
+                            </div>    
+
+                            <br>   
+
+                            
+                            <p>Assunto:</p>
+                            
+                            <form method="post" action="informar-assunto">
+                                <select name="Assunto">
+                                <option value="comercial">Comercial</option>
+                                <option value="duvida">Dúvidas</option>
+                                <option value="cotacao">Orçamentos</option>
+                                <option value="outro">Outros</option>
+                                </select>
+
+                                <br><br>
+
+                            <p>Mensagem:</p>
+                            
+                            <textarea class="inputUserbox" name="detalhes" id="detalhes" cols="30" rows="7" maxlength="500"></textarea>
+
+                            <input type="submit" value="Enviar" name="submit" id="submit">
+                            
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+            <!--QUEM SOMOS-->   
+            <section class="bloco" id="quemsomos">        
+                <div class="espelho">
+                <p class="conteudo-sobre-paragrafo">O Bar do Estadão é um ponto extremamente tradicional do Centro de SP. 
+                    Desde 1968 servindo o melhor e mais premiado Sanduíche de Pernil de São Paulo, eleito pelo público! 
+                    São mais de 30 peças de Pernil consumidas por dia, sendo que cada uma delas pesa em média entre 6 kg à 7 kg. 
+                    Famoso e saboroso, o Sanduíche de Pernil é o carro chefe, são vários os seus acompanhamentos, dentre eles o sanduíche
+                     de pernil tradicional com o famoso molho do Estadão, o sanduíche mais vendido!</p>
+                
+                     <ul class="slider-somos">
+                        <li>
+                            <input type="radio" id="slide1-somos" name="slide-somos" checked="true">
+                            <label for="slide1-somos"></label>
+                            <img class="image-somos" src="img/lugar (3).jpg" />
+                        </li>
+    
+                        <li>
+                            <input type="radio" id="slide2-somos" name="slide-somos">
+                            <label for="slide2-somos"></label>
+                            <img class="image-somos" src="img/lugar (2).jpg" />
+                        </li>
+    
+                        <li>
+                            <input type="radio" id="slide3-somos" name="slide-somos">
+                            <label for="slide3-somos"></label>
+                            <img class="image-somos" src="img/Estadão (245).JPG" />
+                        </li>
+                    </ul> 
+                </div>
+         </section>
+        </section>
+    </div>
+
+       <!--RODAPÉ-->
+       <footer id="rodape" class="rodape">
+            <P class="rodapedetalheshr">FUNCIONAMENTO 24H</P>
+            <br>
+            <p class="rodapedetalhes">Telefone: </p>
+            <a class="rodapedetalhes1" href="tel:+551132577121">(11) 3257-7121</a>
+            <br>
+            <p class="rodapedetalhes">E-mail:</p>
+            <a class="rodapedetalhes1" href="mailto:comercial@estadaolanches.com.br">comercial@estadaolanches.com.br</a>
+            <br>
+            <p class="rodapedetalhes">Como chegar ?</p>
+            <p class="rodapedetalhes1">Endereço: Viaduto Nove de Julho, 193 - Centro
+                São Paulo - SP
+                01050-060
+                Brasil</p>
+                <br>
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="258" height="193" id="gmap_canvas" src="https://maps.google.com/maps?q=%20Viaduto%20Nove%20de%20Julho,%20193%20-%20Centro%20S%C3%A3o%20Paulo%20-%20SP%2001050-060%20Brasil&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:193px;width:258px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:193px;width:258px;}</style></div></div>
+                <br>
+            <p class="rodapedetalhes">Redes sociais</p>
+                
+                <a class="redelink1" href="https://instagram.com/barelanchesestadao?igshid=YmMyMTA2M2Y=" target="_blank">Instagram</a>
+                <a class="redelink2" href="https://linktr.ee/barestadao?fbclid=PAAaYSPIOW3XkOAFJQhlZNVtKhDhmvGjjbxUA-qgxqMUdQyeNe1Xw8M-xVysM" target="_blank">
+                    Linktree
+                </a>    
+            <br>
+        </footer>
+</body>
+</html>
